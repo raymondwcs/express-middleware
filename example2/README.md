@@ -14,4 +14,4 @@ npm install
 npm start
 ```
 ### Testing
-Go to http://localhost:8099/ to see requests being logged in the console.
+Go to http://localhost:8099/ from an Apple computer.
