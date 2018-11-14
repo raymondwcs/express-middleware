@@ -3,7 +3,7 @@ var app = express();
 
 app.use(function(req,res,next) {
   console.log(req.method + ' ' + req.url +
-              ' was requested at ' + Date.now());
+              ' was requested at ' + Date(Date.now()).toString());
   next();
 })
 

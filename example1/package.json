@@ -8,7 +8,7 @@
 		"express-session": "latest",
 		"body-parser": "latest"
 	},
-	"scripts" : {
+	"scripts": {
 		"start": "node server.js"
 	},
 	"engine": "*"
