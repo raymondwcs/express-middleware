@@ -12,4 +12,4 @@ npm install
 npm start
 ```
 ### Testing
-Go to http://localhost:8099/help and see the number of time `/help` was requested.
+Go to http://localhost:8099/help and see the number of time `/help` has been requested.
