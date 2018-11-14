@@ -2,7 +2,7 @@ var express = require('express');
 var app = express();
 
 app.use(function(req,res,next) {  // logger middleware
-  console.log(req.method + ' ' + req.url +  ' was requested at ' + Date.now());
+  console.log(req.method + ' ' + req.url +  ' was requested at ' + Date(Date.now()).toString());
   next();
 })
 
