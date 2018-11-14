@@ -1,5 +1,5 @@
 # Express Middle Example
-This example demonstrates the use of **application-level** middleware
+This example demonstrates the use of **application-level** middleware.  The middle-ware logs all request attempts at the console.
 
 ## Getting Started
 
