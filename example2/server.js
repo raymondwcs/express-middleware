@@ -8,7 +8,7 @@ app.use(function(req,res,next) {  // logger middleware
 
 app.use(function(req,res,next) {  // Mac disciminator middlware
   console.log(JSON.stringify(req.headers));
-  if (req.headers['user-agent'].indexOf('Mac')) {
+  if (req.headers['user-agent'].indexOf('Mac') >= 0) {
     res.end('We do not support Apple Computers!')
   } else {
     next();
