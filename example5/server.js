@@ -9,7 +9,7 @@ app.use(express.static('public'));
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }));
 
-app.post('/login',function(req,res,next) {
+app.post('/login', (req,res,next) => {
    res.write('ID = ' + req.body.id);
    res.end('PASSWORD = ' + req.body.password);
 });

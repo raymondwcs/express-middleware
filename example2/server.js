@@ -1,12 +1,12 @@
 var express = require('express');
 var app = express();
 
-app.use(function(req,res,next) {  // logger middleware
+app.use((req,res,next) => {  // logger middleware
   console.log(req.method + ' ' + req.url +  ' was requested at ' + Date(Date.now()).toString());
   next();
 })
 
-app.use(function(req,res,next) {  // Mac disciminator middlware
+app.use((req,res,next) => {  // Mac disciminator middlware
   console.log(JSON.stringify(req.headers));
   if (req.headers['user-agent'].indexOf('Mac') >= 0) {
     res.end('We do not support Apple Computers!')
@@ -15,11 +15,11 @@ app.use(function(req,res,next) {  // Mac disciminator middlware
   }
 });
 
-app.get('/', function(req,res,next) {
+app.get('/', (req,res,next) => {
   res.send('Hello World!');
 });
 
-app.get('/help', function(req,res,next) {
+app.get('/help', (req,res,next) => {
   res.send('Nope.. nothing to see here');
 });
 
