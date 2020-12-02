@@ -1,5 +1,5 @@
-var express = require('express');
-var app = express();
+const express = require('express');
+const app = express();
 
 app.use((req,res,next) => {  // logger middleware
   console.log(req.method + ' ' + req.url +  ' was requested at ' + Date(Date.now()).toString());
